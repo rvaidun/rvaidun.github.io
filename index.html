@@ -1,88 +1,244 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-    />
-    <link rel="stylesheet" href="styles.css" />
-    <!-- Create a Favicon -->
-    <link rel="icon" href="images/favicon.ico" />
-    <title>Home</title>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-V3T5QS28X0"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Create a Favicon -->
+  <link rel="icon" href="images/favicon.ico" />
+  <link rel="stylesheet" href="output.css" />
+  <link rel="stylesheet" href="test.css" />
+  <title>Home</title>
+</head>
+<body>
+  <div class="relative flex h-full min-h-screen w-full">
+    <div
+      class="fixed inset-0 z-20 bg-black bg-opacity-10 transition duration-200 ease-in-out dark:bg-opacity-50 pointer-events-none opacity-0"></div>
+    <div class="flex flex-1">
+      <div class="flex w-full">
+        <div
+          id="main"
+          class="relative flex max-h-screen w-full flex-col overflow-y-auto bg-white dark:bg-black"
+          data-cy="home-intro">
+          <div class="mx-auto w-full max-w-3xl px-4 py-12 pb-10 md:px-8">
+            <div class="pb-24 space-y-8 md:space-y-16">
+              <div class="grid items-start grid-cols-1 gap-6 md:grid-cols-12">
+                <h4
+                  class="col-span-2 pt-8 text-lg font-extrabold text-black dark:text-white md:pt-0 md:text-right md:text-base md:font-normal md:text-opacity-40"></h4>
+                <div class="col-span-10">
+                  <div class="prose text-primary">
+                    <p>
+                      Hey, I&apos;m Rahul. I&apos;m a
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="https://github.com/rvaidun">
+                        developer</a
+                      >
+                      and recent new grad from the
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="https://ucsc.edu">
+                        University of California at Santa Cruz</a
+                      >
+                      I&apos;m currently working as a contractor at
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="https://texts.com/">
+                        Texts
+                      </a>
+                      building a universal chat client to bring all of your
+                      messages in one inbox.
+                    </p>
+                    I&apos;m also working at
+                    <a
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      href="http://svfinancials.com/">
+                      SV Financials </a
+                    >, automating giving rate quotes for client scenarios.
 
-      gtag("config", "G-V3T5QS28X0");
-    </script>
-  </head>
-  <!-- Center the body -->
+                    <p>
+                      Last summer, I interned at
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="https://www.mulesoft.com/">
+                        Mulesoft
+                      </a>
+                      as a Solutions Engineer where I Developed solutions and
+                      API's in Anypoint platform and created an enablement menu
+                      for the Channel Solution Engineer Team
+                    </p>
 
-  <body class="rahul-styles-body">
-    <div class="container" style="text-align: left">
-      <img
-        src="images/myphoto.jpeg"
-        alt="Photo of Rahul Vaidun"
-        width="400"
-        height="400"
-      />
-      <h1>Hi! 👋</h1>
-      <p style="font-size: 20px">
-        I'm a student at University of California at Santa Cruz and I'm studying
-        Computer science. In the summer of 2022 I was interning as a Solution
-        Engineer at Salesforce. I'm also currently for a Software Engineering
-        New Grad role for Summer 2023.I mainly code in Python, C, Javascript,
-        and Java. I'm interested in low level systems programming. I am
-        proficient in C and have taken many low level systems classes at UCSC
-        including Computer Systems and Assembly Language, Computer Systems and C
-        Programming, Computer Architecture, Data Structures and Algorithms,
-        Advanced Programming, Machine Learning, Foundations of Programming
-        Languages, Introduction to Analysis of Algorithms, Computational Models
-        and Principles of Computer System Design. I am also interested in web
-        development and am proficient in React.js and Vue
-      </p>
-
-      <br />
-      <br />
-      <p style="font-size: medium">Projects:</p>
-      <ul
-        class="text-left"
-        style="
-          display: inline-block;
-          vertical-align: middle;
-          font-size: medium;
-          padding-left: 0;
-        "
-      >
-        <li><a href="https://www.befake.fr/">befake.fr</a></li>
-      </ul>
-      <br />
-
-      <p style="font-size: medium">Follow me on Social Media:</p>
-      <ul
-        class="text-left"
-        style="
-          display: inline-block;
-          vertical-align: middle;
-          font-size: medium;
-          padding-left: 0;
-        "
-      >
-        <li><a href="https://www.linkedin.com/in/rahulvaidun/">LinkedIn</a></li>
-        <li><a href="https://github.com/rvaidun">Github</a></li>
-        <p>Download my <a href="Rahul_Vaidun_Resume.pdf">Resumé</a></p>
-      </ul>
+                    <p>
+                      When I'm not at the computer I enjoy hiking, skiing,
+                      running, and playing table tennis
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="grid items-start grid-cols-1 gap-6 md:grid-cols-12">
+                <h4
+                  class="col-span-2 pt-8 text-lg font-extrabold text-black dark:text-white md:pt-0 md:text-right md:text-base md:font-normal md:text-opacity-40">
+                  Online
+                </h4>
+                <div class="col-span-10">
+                  <div class="flex flex-col space-y-3">
+                    <a
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      href="/github"
+                      class="flex items-center space-x-4 group"
+                      ><strong
+                        class="flex-none font-medium text-gray-1000 group-hover:text-blue-600 group-hover:underline dark:text-gray-100 dark:group-hover:text-blue-500"
+                        >GitHub</strong
+                      ><span
+                        class="w-full border-t border-gray-300 border-dashed shrink dark:border-gray-800"></span
+                      ><span class="flex-none text-tertiary">Follow</span></a
+                    ><a
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      href="mailto:rahul.vaidun@gmail.com"
+                      class="flex items-center space-x-4 group"
+                      ><strong
+                        class="flex-none font-medium text-gray-1000 group-hover:text-blue-600 group-hover:underline dark:text-gray-100 dark:group-hover:text-blue-500"
+                        >Email</strong
+                      ><span
+                        class="w-full border-t border-gray-300 border-dashed shrink dark:border-gray-800"></span
+                      ><span class="flex-none text-tertiary">Message</span></a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="grid items-start grid-cols-1 gap-6 md:grid-cols-12">
+                <h4
+                  class="col-span-2 pt-8 text-lg font-extrabold text-black dark:text-white md:pt-0 md:text-right md:text-base md:font-normal md:text-opacity-40">
+                  Where
+                </h4>
+                <div class="col-span-10">
+                  <img
+                    alt="Map of San Francisco with blue location dot in the middle"
+                    sizes="100vw"
+                    src="https://brianlovin.com/_next/image?url=%2Fstatic%2Fimg%2Fsf.png&w=1920&q=100"
+                    width="800"
+                    height="400"
+                    decoding="async"
+                    data-nimg="1"
+                    class="rounded-2xl"
+                    style="color: transparent; width: 100%; height: auto" />
+                  <p
+                    class="flex items-center justify-end pt-2 space-x-2 text-sm text-quaternary md:text-right">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="12"
+                      height="12"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round">
+                      <path
+                        d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                      <circle cx="12" cy="10" r="3"></circle></svg
+                    ><span>San Francisco, CA</span>
+                  </p>
+                </div>
+              </div>
+              <div class="grid items-start grid-cols-1 gap-6 md:grid-cols-12">
+                <h4
+                  class="col-span-2 pt-8 text-lg font-extrabold text-black dark:text-white md:pt-0 md:text-right md:text-base md:font-normal md:text-opacity-40">
+                  Work
+                </h4>
+                <div class="col-span-10">
+                  <div class="flex flex-col space-y-3">
+                    <a
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      href="http://svfinancials.com/"
+                      class="flex items-center space-x-4 group"
+                      ><strong
+                        class="flex-none font-medium text-gray-1000 group-hover:text-blue-600 group-hover:underline dark:text-gray-100 dark:group-hover:text-blue-500"
+                        >SV Financials</strong
+                      ><span
+                        class="w-full border-t border-gray-300 border-dashed shrink dark:border-gray-800"></span
+                      ><span class="flex-none text-tertiary"
+                        >Software Engineer</span
+                      ><span class="flex-none font-mono text-quaternary"
+                        >2020-Present</span
+                      >
+                    </a>
+                    <a
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      href="https://www.mulesoft.com/"
+                      class="flex items-center space-x-4 group"
+                      ><strong
+                        class="flex-none font-medium text-gray-1000 group-hover:text-blue-600 group-hover:underline dark:text-gray-100 dark:group-hover:text-blue-500"
+                        >Mulesoft</strong
+                      ><span
+                        class="w-full border-t border-gray-300 border-dashed shrink dark:border-gray-800"></span
+                      ><span class="flex-none text-tertiary"
+                        >Solutions Engineer Intern</span
+                      ><span class="flex-none font-mono text-quaternary"
+                        >Summer 2022
+                      </span></a
+                    ><a
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      href="https://designdetails.fm"
+                      class="flex items-center space-x-4 group"
+                      ><strong
+                        class="flex-none font-medium text-gray-1000 group-hover:text-blue-600 group-hover:underline dark:text-gray-100 dark:group-hover:text-blue-500"
+                        >SkyGeni</strong
+                      ><span
+                        class="w-full border-t border-gray-300 border-dashed shrink dark:border-gray-800"></span
+                      ><span class="flex-none text-tertiary"
+                        >Software Engineer</span
+                      ><span class="flex-none font-mono text-quaternary"
+                        >2020-21
+                      </span></a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="grid items-start grid-cols-1 gap-6 md:grid-cols-12">
+                <h4
+                  class="col-span-2 pt-8 text-lg font-extrabold text-black dark:text-white md:pt-0 md:text-right md:text-base md:font-normal md:text-opacity-40">
+                  Projects
+                </h4>
+                <div class="col-span-10">
+                  <div class="flex flex-col space-y-3">
+                    <a
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      href="https://github.com/rvaidun/befake"
+                      class="flex items-center space-x-4 group"
+                      ><strong
+                        class="flex-none font-medium text-gray-1000 group-hover:text-blue-600 group-hover:underline dark:text-gray-100 dark:group-hover:text-blue-500"
+                        >BeFake</strong
+                      ><span
+                        class="w-full border-t border-gray-300 border-dashed shrink dark:border-gray-800"></span
+                      ><span class="flex-none font-mono text-quaternary"
+                        >Jul &#x27;22</span
+                      ></a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="grid items-start grid-cols-1 gap-6 md:grid-cols-12">
+                <div class="col-span-10">
+                  <p class="prose">
+                    Design heavily inspired by
+                    <a href="https://brianlovin.com/">Brian Lovin</a>.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-  </body>
-</html>
+  </div>
+</body>
